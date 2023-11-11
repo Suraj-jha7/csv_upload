@@ -22,8 +22,9 @@ app.set('view engine', 'ejs');
 app.set('views', './views');
 
 // ************************  Database Connection  **********************************//
-const {connectMonggose} = require('./config/mongoose')
+const connectMonggose = require('./config/mongoose')
 connectMonggose();
+// const db=require("./config/mongoose");
 
 
 //to create an duse sessions
